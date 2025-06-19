@@ -23,17 +23,27 @@ h1{
 .input-container{
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 input{
   padding: .5rem 2rem;
-
+ background-color: white;
+ border: 1px solid black;
+ border-radius: 5px;
+}
+input:focus{
+  outline: none;
+ 
 }
 button{
   padding: .5rem 2rem;
+  cursor: pointer;
+  font-weight: 900;
 }
 table{
   margin-top: 2rem;
-  border:  2px solid black;
   width: 100%;
 }
 th {
@@ -42,10 +52,15 @@ th {
   text-align: center;
   color: white;
 }
-tbody tr {
-  width: 100%;
+tbody tr td {
+  
 text-align: center;
+border: 2px solid black;
+ border-collapse: collapse;
+  padding: 1rem 0;
 }
+
+
 
 
 

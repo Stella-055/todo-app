@@ -44,14 +44,17 @@ function App() {
       <table>
         <thead>
           <tr>
+          <th>Item No</th>
             <th>Task</th>
             <th>Description</th>
+            
           </tr>
         </thead>
         <tbody>
           {alltasks.map((task, index) => {
             return (
               <tr key={index}>
+                <td>{index +1}</td>
                 <td>{task.task}</td>
                 <td>{task.description}</td>
               </tr>
