@@ -1,3 +1,11 @@
+# Todo-app  
+This repo demonstrates basic use of usestate hook in react
+
+![image](https://github.com/user-attachments/assets/b2acd3a3-514f-4181-94ec-ffe74dc420c4)
+
+## Check out the live site: https://your2todos.netlify.app/
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
