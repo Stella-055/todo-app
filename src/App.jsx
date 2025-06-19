@@ -2,11 +2,12 @@ import { use, useState } from "react";
 
 import "./App.css";
 
+
 function App() {
   const [task, setTask] = useState("");
   const [description, setDescription] = useState("");
   const [alltasks, setAlltasks] = useState([
-    { task: "read", description: "Read about trees" },
+   
   ]);
 
   function Additems(e) {
@@ -29,7 +30,7 @@ function App() {
       <div className="input-container">
         <input
           type="text"
-          placeholder="task eg.Read"
+          placeholder="Task eg.Read"
           value={task}
           onChange={(e) => setTask(e.target.value)}
         />
@@ -41,6 +42,7 @@ function App() {
         />
         <button onClick={Additems}>ADD</button>
       </div>
+      {alltasks.length !==0 && 
       <table>
         <thead>
           <tr>
@@ -62,6 +64,8 @@ function App() {
           })}
         </tbody>
       </table>
+      
+        }
     </div>
   );
 }
